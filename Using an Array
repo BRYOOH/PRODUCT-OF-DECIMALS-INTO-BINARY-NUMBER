@@ -1,0 +1,32 @@
+import java.util.Scanner;
+public class Main
+{
+    public static void main(String[] args) {
+        int Product,first,second;
+        Scanner scan= new Scanner(System.in);
+        System.out.println("Enter the value for the first number; ");
+        first = scan.nextInt();
+         System.out.println("Enter the value for the second number; ");
+        second= scan.nextInt();
+        scan.close();
+         Product= first*second;
+        System.out.println("The product of the values is " + Product );
+         
+        int binaryArray[]= new int[16];
+        int index= binaryArray.length-1;
+         while(Product!= 0){
+             binaryArray[index]= Product % 2;
+             Product= Product/2;
+             index--;
+         }
+         for(int n: binaryArray){
+         System.out.print(n);
+                 } 
+                  
+                     
+      }
+                  
+}
+              
+          
+
